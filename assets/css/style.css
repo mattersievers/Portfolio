@@ -1,5 +1,6 @@
+/* These are styles appied to the whole website */
 @import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Work+Sans:wght@900&display=swap');
 
 :root{
   --color-one: #A2807F;
@@ -7,6 +8,7 @@
   --color-three: #83A4CF;
   --color-four: #ccd6eb;
   --color-five: #7B797C;
+  --color-six: #4D7FB2;
 }
 
 html {
@@ -19,23 +21,26 @@ html {
   padding: 0;
 }
 
+/* Header Style Starts Here */
 header {
     display: flex;
+    padding: 0 35px;
     justify-content: space-between;
     flex-wrap: wrap;
+    position: sticky;
+    top: 0;
     background-image: url("../images/image2.jpg");
     background-size: cover;
     background-position: 80%;
     background-attachment: fixed;
     z-index: 9999;
 }
+
 header h1 {
-  padding: 10px 15px 10px 10px;
+  padding: 10px 15px 0 10px;
   margin: 15px 20px;
-  box-shadow: 1px 1px black;
-  border-radius: 50%;
   font-size: 40px;
-  font-family: Tangerine;
+  font-family: Tangerine, Snell Roundhand, cursive;
 }
 
 header a {
@@ -44,7 +49,6 @@ header a {
   color:var(--color-two);
   text-shadow: 1px 1px black;
   color: var(--color-two);
-
 }
 
 header nav ul {
@@ -56,15 +60,17 @@ header nav ul {
 }
 
 header nav ul li a{
-  margin: 40px 30px;
-  padding: 15px ;
+  margin: 10px 20px;
+  padding: 10px 15px ;
   box-shadow: 1px 1px black ;
-  border-radius: 50%;
-  font-size: 32px;
-  font-family: Work Sans;
+  border-radius: 25%;
+  font-size: 26px;
+  font-family: Montserrat, Arial, Helvetica;
   font-weight: 800;
+  transition: margin-left 1.5s ease-in;
 }
 
+/* Hero Styles Start Here */
 .hero{
   display: flex;
   background-image: url("../images/image2.jpg");
@@ -84,7 +90,7 @@ header nav ul li a{
 }
 
 .gradient-text{
-  background-color: var(--color-one);
+  background-color: rgb(10, 13, 20);
   background-image: radial-gradient(
     at bottom left,
     var(--color-one),
@@ -96,5 +102,94 @@ header nav ul li a{
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: none;
+  transition: margin-right 30s ease-out; 
+}
+
+/*About Me Section Starts */
+
+.about-me {
+  background-image: radial-gradient(
+    at top right,
+    var(--color-two) 0%,
+    var(--color-four) 8%,
+    var(--color-three) 30%,
+    var(--color-six) 80%, 85%,
+    var(--color-five) 100%
+    );
+  display: flex;
+  flex-wrap: wrap;  
+}
+
+.about-me img {
+  flex: 1 15%;
+  margin-right: 20px;
+  padding: 0 50px 0 100px;
+}
+
+.about-me article{
+  align-content: flex-end;
+  text-align: center;
+  flex: 1 60%;
+  padding-right: 275px;
+  padding-left: 100px;
   
+}
+.about-me h3{
+  margin: 20px 15px;
+  padding: auto;
+}
+
+.about-me p{
+  margin: auto;
+}
+
+/* My Works Style Start Here */
+.works{
+  background-image: radial-gradient(
+    at bottom right,
+    var(--color-two) 0%,
+    var(--color-four) 8%,
+    var(--color-three) 30%,
+    var(--color-six) 80%, 85%,
+    var(--color-five) 100%
+    );
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center; 
+}
+
+.select-work{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+/*Resume Style Starts Here */
+
+.resume {
+  background-image: radial-gradient(
+    at top right,
+    var(--color-two) 0%,
+    var(--color-four) 8%,
+    var(--color-three) 30%,
+    var(--color-six) 80%, 85%,
+    var(--color-five) 100%
+    );
+  display: flex;
+  flex-wrap: wrap;
+
+}
+/*Contact Me Style Starts Here */
+
+.contact {
+  background-image: radial-gradient(
+    at bottom right,
+    var(--color-two) 0%,
+    var(--color-four) 8%,
+    var(--color-three) 30%,
+    var(--color-six) 80%, 85%,
+    var(--color-five) 100%
+    );
+  display: flex;
+  flex-wrap: wrap;
 }
