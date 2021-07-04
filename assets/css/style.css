@@ -177,6 +177,7 @@ header nav ul li a{
     );
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
 
 }
 /*Contact Me Style Starts Here */
@@ -192,4 +193,11 @@ header nav ul li a{
     );
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.contact form{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
