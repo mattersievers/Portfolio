@@ -43,8 +43,8 @@ header {
 }
 
 header h1 a {
-  padding: 10px 15px 0 10px;
-  margin: 15px 20px;
+  padding: 10px;
+  margin: 20px;
   font-size: 40px;
   font-family: Tangerine, Snell Roundhand, cursive;
 }
@@ -60,7 +60,7 @@ header a {
 header nav ul {
     display: flex;
     justify-content: space-between;
-    padding-top: 30px;
+    padding: 20px;
     list-style: none;
     flex-wrap: wrap;
 }
@@ -144,6 +144,7 @@ header nav ul li a{
 
 .about-me p{
   margin: auto;
+  text-align: left;
 }
 
 /* My Works Style Start Here */
@@ -166,6 +167,7 @@ header nav ul li a{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin: 20px;
 }
 /*Resume Style Starts Here */
 
@@ -224,9 +226,11 @@ header nav ul li a{
 }
 
 .contact-info label{
+  margin: 5px;
   width: 300%
 }
 .contact-info input{
+  margin: 5px;
   width: 300%;
 }
 
