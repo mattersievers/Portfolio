@@ -24,9 +24,10 @@ html {
 /* Header Style Starts Here */
 header {
     display: flex;
-    padding: 0 35px;
+    padding: 10px 35px;
     justify-content: space-between;
     flex-wrap: wrap;
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
     background-image: url("../images/image2.jpg");
@@ -64,7 +65,7 @@ header nav ul li a{
   padding: 10px 15px ;
   box-shadow: 1px 1px black ;
   border-radius: 25%;
-  font-size: 26px;
+  font-size: 1.55vw;
   font-family: Montserrat, Arial, Helvetica;
   font-weight: 800;
   transition: margin-left 1.5s ease-in;
@@ -194,10 +195,30 @@ header nav ul li a{
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  align-items: center;
 }
 
 .contact form{
+  padding: 20px;
+  width: 33%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  background-color: rgb(255, 255, 255, 0.3);
+  border: 1px solid black: ;
+  border-radius: 25%;
+}
+
+.contact form h2{
+  padding: 0 100px;
+}
+.contact form button {
+  margin:10px;
+}
+.contact-form{
+  margin:10px;
+}
+.contact button {
+  margin: 0 100px;
+  width: 25%;
 }
