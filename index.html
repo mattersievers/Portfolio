@@ -35,7 +35,7 @@
   <!--Hero Section Here-->
   <section class="hero">
     <div>
-      <h2 class="gradient-text">Hello, <br> I am <br> Matthew <br> and I develop websites.</h2>
+      <h2 class="gradient-text">Hi, my name is <br> Matthew and I <br> develop websites.</h2>
     </div>
     <br>
   </section>
@@ -119,18 +119,21 @@
 
   <!--Contact Form is Here-->
   <section id="contact" class="contact">
-    <form>
+    <div class="contact-info">
       <h2>Contact Me!</h2>
-      <label for="name">Enter name:</label>
-      <input type="text" placeholder="Your Name" name="name" id="name" class="contact-form">
-      <label for="email">Enter Email Address:</label>
-      <input type="email" placeholder="Email Address" name="email" id="email" class="contact-form">
-      <label for="message">Type a message:</label>
-      <input type="text" placeholder="Message" name="message" id="message" class="contact-form">
-      <br>
-      <button type="submit">Send!</button>
-    </form>
-    
+      <form action="mailto:mattersievers@gmail.com" method="post" enctype="text/plain">
+        <label for="name">Enter your name:</label>
+        <input type="text" placeholder="Your Name" name="name" id="name" >
+          
+        <label for="email">Enter Your Email:</label>
+        <input type="email" placeholder="Email Address" name="email" id="email">
+          
+        <label for="message">Type a message:</label>
+        <textarea id="message"  placeholder= "Message" ></textarea>
+
+        <button type="submit">Send!</button>        
+      </form>
+    </div>
   </section>
 
 

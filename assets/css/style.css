@@ -11,16 +11,21 @@
   --color-six: #4D7FB2;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 *{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: Montserrat, Arial, Helvetica;
 }
 
+
+html {
+  scroll-behavior: smooth;
+}
+
+section{
+  padding: 100px;
+}
 /* Header Style Starts Here */
 header {
     display: flex;
@@ -37,7 +42,7 @@ header {
     z-index: 9999;
 }
 
-header h1 {
+header h1 a {
   padding: 10px 15px 0 10px;
   margin: 15px 20px;
   font-size: 40px;
@@ -66,7 +71,6 @@ header nav ul li a{
   box-shadow: 1px 1px black ;
   border-radius: 25%;
   font-size: 1.55vw;
-  font-family: Montserrat, Arial, Helvetica;
   font-weight: 800;
   transition: margin-left 1.5s ease-in;
 }
@@ -84,10 +88,7 @@ header nav ul li a{
 }
 
 .hero h2{
-  margin: 20px;
-  padding:10px;
   font-size: 100px;
-  ;
 }
 
 .gradient-text{
@@ -109,6 +110,7 @@ header nav ul li a{
 /*About Me Section Starts */
 
 .about-me {
+  margin-top: 15px;
   background-image: radial-gradient(
     at top right,
     var(--color-two) 0%,
@@ -198,27 +200,43 @@ header nav ul li a{
   align-items: center;
 }
 
-.contact form{
-  padding: 20px;
+.contact-info{
+  background-color: rgb(255, 255, 255, 0.3);
+  border: 1px solid black;
+  border-radius: 25%;
+  display:flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+
+.contact-info h2{
+  margin: 10px auto;
+}
+
+.contact-info form{
+  padding: 5px 10px;
   width: 33%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  background-color: rgb(255, 255, 255, 0.3);
-  border: 1px solid black: ;
-  border-radius: 25%;
+  
 }
 
-.contact form h2{
-  padding: 0 100px;
+.contact-info label{
+  width: 300%
 }
-.contact form button {
-  margin:10px;
+.contact-info input{
+  width: 300%;
 }
-.contact-form{
-  margin:10px;
+
+
+.contact-info button{
+  margin: 20px auto;
+  padding: 2px 3px;
+  background-color: rgba(131,164,207,1.0);
 }
-.contact button {
-  margin: 0 100px;
-  width: 25%;
+
+.contact button:hover{
+  background-color: rgba(131,164,207,0.5);
 }
