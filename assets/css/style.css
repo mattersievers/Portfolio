@@ -21,7 +21,6 @@
     opacity: 0;
   }
 }
-
 @keyframes picAnimateLeft {
   0% {
     -webkit-transform: rotate(0deg);
@@ -40,6 +39,24 @@
   100% {
     -webkit-transform: rotate(-360deg);
     opacity: 0;
+  }
+}
+
+@keyframes cursor-animate{
+  0%{
+    cursor: ns-resize;
+  }
+  25% {
+    cursor: nesw-resize;
+  }
+  50% {
+    cursor: ew-resize;
+  }
+  75%{
+    cursor: nwse-resize;
+  }
+  100%{
+    cursor: text;
   }
 }
 
@@ -219,6 +236,15 @@ header nav ul li a:active{
 .about-me article:hover {
   background-color: rgba(131,164,207,1.0);
 }
+.about-me article:active {
+  animation-fill-mode: both;
+  animation-name: cursor-animate;
+  animation-duration: 0.25s;
+  animation-timing-function: linear;
+  -webkit-animation-name: cursor-animate;
+  -webkit-animation-duration: 0.25s;
+  -webkit-animation-timing-function: linear; 
+}
 .about-me h3{
   margin: 15px;
   padding: auto;
@@ -257,7 +283,7 @@ header nav ul li a:active{
 .select-work{
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   margin: 50px;
 }
@@ -265,7 +291,24 @@ header nav ul li a:active{
 .select-work img{
   border-radius: 15%;
 }
-
+#r-b-pic:hover{
+  animation-fill-mode: forwards;
+  animation-name: picAnimateLeft;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  -webkit-animation-name: picAnimateLeft;
+  -webkit-animation-duration: 4s;
+  -webkit-animation-timing-function: linear;
+}
+#p-g-pic:hover{
+  animation-fill-mode: forwards;
+  animation-name: picAnimateRight;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  -webkit-animation-name: picAnimateRight;
+  -webkit-animation-duration: 4s;
+  -webkit-animation-timing-function: linear;
+}
 .select-work article{
   display: flex;
   flex-wrap: wrap;
@@ -285,9 +328,11 @@ header nav ul li a:active{
   text-align: center;
   margin: 5px 20px 20px;
 }
-/*Resume Style Starts Here */
 
+
+/*Resume Style Starts Here */
 .resume {
+  padding-top: 50px;
   background-image: radial-gradient(
     at top right,
     var(--color-two) 0%,
@@ -298,6 +343,8 @@ header nav ul li a:active{
     );
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .resume-paper {
@@ -314,11 +361,22 @@ header nav ul li a:active{
 .resume-paper:hover {
   background-color: rgba(131,164,207,1.0);
 }
- 
+
+.resume-paper:active {
+  animation-fill-mode: both;
+  animation-name: cursor-animate;
+  animation-duration: 0.25s;
+  animation-timing-function: linear;
+  -webkit-animation-name: cursor-animate;
+  -webkit-animation-duration: 0.25s;
+  -webkit-animation-timing-function: linear;  
+}
+
 .resume-paper div{
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  width: 100%;
 }
 .resume-paper h2{
   margin: 25px auto 50px auto;
@@ -355,6 +413,12 @@ header nav ul li a:active{
   margin: 10px;
   font-size: 12px;
 }
+.resume a {
+color: var(--color-two);
+text-decoration: none;
+margin: 5px;
+padding: 5px;
+}
 
 /*Contact Me Style Starts Here */
 
@@ -380,6 +444,7 @@ header nav ul li a:active{
   display:flex;
   flex-direction: column;
   align-content: center;
+  width: 50%;
 }
 
 
@@ -389,7 +454,7 @@ header nav ul li a:active{
 
 .contact-info form{
   padding: 5px 10px;
-  width: 33%;
+  width: 50%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -398,13 +463,13 @@ header nav ul li a:active{
 
 .contact-info label{
   margin: 5px;
-  width: 300%
+  width: 200%
 }
-.contact-info input{
+.contact-info input, .contact-info textarea{
+  padding: 5px;
   margin: 5px;
-  width: 300%;
+  width: 200%;
 }
-
 
 .contact-info button{
   margin: 20px auto;
