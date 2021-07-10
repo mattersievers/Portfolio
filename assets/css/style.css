@@ -59,7 +59,26 @@
     cursor: text;
   }
 }
-
+.topRightGradient {
+  background-image: radial-gradient(
+    at top right,
+    var(--color-two) 0%,
+    var(--color-four) 8%,
+    var(--color-three) 30%,
+    var(--color-six) 80%, 85%,
+    var(--color-five) 100%
+    );
+}
+.bottomRightGradient {
+  background-image: radial-gradient(
+  at bottom right,
+  var(--color-two) 0%,
+  var(--color-four) 8%,
+  var(--color-three) 30%,
+  var(--color-six) 80%, 85%,
+  var(--color-five) 100%
+  );
+}
 :root{
   --color-one: #A2807F;
   --color-two:  #E7F1F3;
@@ -178,14 +197,6 @@ header nav ul li a:active{
 /*About Me Section Starts */
 .about-me {
   margin-top: 15px;
-  background-image: radial-gradient(
-    at top right,
-    var(--color-two) 0%,
-    var(--color-four) 8%,
-    var(--color-three) 30%,
-    var(--color-six) 80%, 85%,
-    var(--color-five) 100%
-    );
   display: flex;
   flex-wrap: wrap; 
   align-items: center;
@@ -257,14 +268,6 @@ header nav ul li a:active{
 
 /* My Works Style Start Here */
 .works{
-  background-image: radial-gradient(
-    at bottom right,
-    var(--color-two) 0%,
-    var(--color-four) 8%,
-    var(--color-three) 30%,
-    var(--color-six) 80%, 85%,
-    var(--color-five) 100%
-    );
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -479,4 +482,15 @@ padding: 5px;
 
 .contact button:hover{
   background-color: rgba(131,164,207,0.5);
+}
+
+/* Footer styling starts here */
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+footer p {
+  margin: 10px;
 }
