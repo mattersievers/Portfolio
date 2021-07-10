@@ -294,30 +294,55 @@ header nav ul li a:active{
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
-  flex: 1 50%;
+  margin: 50px;
+  padding: 75px;
+  width: 50%;
 }
 .resume-paper:hover {
   background-color: rgba(131,164,207,1.0);
 }
  
+.resume-paper div{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
 .resume-paper h2{
   margin: 25px auto 50px auto;
   padding: auto;
 }
 .resume-paper h3 {
   margin: 25px auto 25px 25px;
+  font-weight: bold;
+  border-bottom: 1px solid black;
 }
-
 .resume-paper h4 {
   margin: 10px auto 5px 25px;
 }
-
 .resume-paper h4 span {
   margin-left: 50px;
 }
 .resume-paper h5 {
   margin: 0 auto 10px 50px;
+  font-style: italic;
 }
+
+.resume-paper h5 span{
+  margin-left: 50px;
+}
+.resume-paper ul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-right: auto;
+  padding-left: 50px;
+}
+
+.resume-paper ul li {
+  margin: 10px;
+  font-size: 12px;
+}
+
 /*Contact Me Style Starts Here */
 
 .contact {
