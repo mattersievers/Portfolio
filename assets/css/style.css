@@ -129,6 +129,57 @@ header nav ul li a{
   padding: 0 50px 0 100px;
 }
 
+@keyframes picAnimate {
+  0% {
+    -webkit-transform: rotate(0deg);
+    opacity: 1.0;
+  }
+  25% {
+    -webkit-transform: rotate(45deg);
+    opacity: 0.75;
+  }
+  50%{
+    -webkit-transform: rotate(90deg);
+    opacity: 0.5;
+  }
+  75% {
+    -webkit-transform: rotate(135deg);
+    opacity: 0.25;
+  }
+  100% {
+    -webkit-transform: rotate(180deg);
+    opacity: 0.1;
+  }
+}
+@-webkit-keyframes picAnimate {
+  0% {
+    -webkit-transform: rotate(0deg);
+    opacity: 1.0;
+  }
+  25% {
+    -webkit-transform: rotate(45deg);
+    opacity: 0.75;
+  }
+  50%{
+    -webkit-transform: rotate(90deg);
+    opacity: 0.5;
+  }
+  75% {
+    -webkit-transform: rotate(135deg);
+    opacity: 0.25;
+  }
+  100% {
+    -webkit-transform: rotate(180deg);
+    opacity: 0.1;
+  }
+}
+.about-me img:hover {
+  animation-fill-mode: forwards;
+  -webkit-animation-name: picAnimate;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in;
+}
+
 .about-me article{
   align-content: flex-end;
   text-align: center;
@@ -168,6 +219,22 @@ header nav ul li a{
   flex-wrap: wrap;
   justify-content: center;
   margin: 20px;
+}
+
+.select-work article{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;  
+}
+
+.select-work h3 {
+  margin: 10px;
+}
+
+.select-work p{
+  margin: 10px;
 }
 /*Resume Style Starts Here */
 
