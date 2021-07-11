@@ -563,6 +563,7 @@ footer p {
   width: fit-content;
   }
   section, footer{
+    margin:0;
     width: 100%;
   }
 
