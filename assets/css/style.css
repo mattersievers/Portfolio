@@ -500,7 +500,7 @@ padding: 5px;
 
 .contact-info label{
   margin: 5px;
-  width: 200%;
+  width: auto;
 }
 
 
@@ -570,15 +570,24 @@ footer p {
     margin-bottom: 0;
   }
 }
+
+
 /* Media Query for tablets and smaller */
 @media screen and (max-width: 768px) {
+  /*Fix nav buttons*/
   header nav ul li a {
     margin-left: auto;
+  }
+  
+  /*Fix email field*/
+  #email {
+    width:150%
   }
 }
 
 /* Media Query for mobile phones and smaller */
 @media screen and (max-width: 575px) {
+  /*Fix header to be readable*/
   header{
     position: relative;
     width: 100%;
@@ -600,12 +609,14 @@ footer p {
     width: 100%;
   }
 
+  /*Fix hero image*/
   .hero{
     background-repeat: no-repeat;
     position: relative;
     background-position: center;
   }
 
+  /*Fix resume spacing*/
   .resume-paper{
     flex-direction: column;
   }
