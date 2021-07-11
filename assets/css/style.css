@@ -105,6 +105,7 @@ html {
 section{
   padding: 100px;
 }
+
 /* Header Style Starts Here */
 header {
     display: flex;
@@ -233,8 +234,7 @@ header nav ul li a:active{
   flex: 1 15%;
   border-radius: 50%;
   margin: 20px;
-  box-shadow: 20px 20px 50px var(--color-five);
-  
+  box-shadow: 20px 20px 50px var(--color-five);  
 }
 #headshot:hover {
   animation-fill-mode: forwards;
@@ -298,11 +298,6 @@ header nav ul li a:active{
   border-bottom: 1px solid black;
 }
 
-.works h2:hover{
-  background-color: rgba(231,241,243, 0.25);
-  border-radius: 33%;
-}
-
 .select-work{
   display: flex;
   flex-wrap: wrap;
@@ -346,11 +341,6 @@ header nav ul li a:active{
   margin: 50px;
   width: 40%;
 }
-.select-work article:hover {
-  background-color: rgba(231,241,243, 0.25);
-  border-radius: 33%;
-}
-
 
 .work-description h3 {
   border-bottom: 0.5px solid black;
@@ -416,8 +406,10 @@ header nav ul li a:active{
 }
 .resume-paper h2{
   margin: 25px auto 50px auto;
-  padding: auto;
+  padding: auto 25px auto 25px;
+  border-bottom: 1px solid black;
 }
+
 .resume-paper h3 {
   margin: 25px auto 25px 25px;
   font-weight: bold;
@@ -443,12 +435,14 @@ header nav ul li a:active{
   justify-content: space-between;
   margin-right: auto;
   padding-left: 50px;
+  margin-bottom: 50px;
 }
 
 .resume-paper ul li {
   margin: 10px;
   font-size: 12px;
 }
+
 .resume a {
 text-decoration: none;
 margin: 5px;
@@ -492,6 +486,7 @@ padding: 5px;
 
 .contact-info h2{
   margin: 10px auto;
+  border-bottom: 1px solid black;
 }
 
 .contact-info form{
@@ -505,8 +500,10 @@ padding: 5px;
 
 .contact-info label{
   margin: 5px;
-  width: 200%
+  width: 200%;
 }
+
+
 .contact-info input, .contact-info textarea{
   padding: 5px;
   margin: 5px;
@@ -538,8 +535,14 @@ footer {
 
 footer p {
   margin: 50px;
+  text-align: center;
 }
 
+/*Highlight effect*/
+.highlight:hover {
+  background-color: rgba(231,241,243, 0.25);
+  border-radius: 33%;
+}
 /* Media Query for smaller desktop screens and smaller */
 @media screen and (max-width: 980px) {
   /*Fix About Me Order*/
@@ -603,7 +606,11 @@ footer p {
     background-position: center;
   }
 
-  footer{
-    width: ;
+  .resume-paper{
+    flex-direction: column;
+  }
+
+  .resume-paper span{
+    display: block;
   }
 }
