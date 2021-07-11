@@ -119,10 +119,14 @@ header {
     z-index: 9999;
 }
 
+header h1 {
+  margin: auto auto auto 0;
+}
+
 header h1 a {
   padding: 10px;
   margin: 20px;
-  font-size: 40px;
+  font-size: 3.25vw;
   font-family: Tangerine, Snell Roundhand, cursive;
 }
 
@@ -135,12 +139,15 @@ header a {
 
 header nav ul {
     display: flex;
-    justify-content: space-between;
-    padding: 20px;
+    justify-content: space-around;
+    padding: 20px 20px 20px auto;
     list-style: none;
     flex-wrap: wrap;
 }
 
+header nav ul li {
+  margin: 5px;
+}
 header nav ul li a{
   margin: 10px 20px;
   padding: 10px 15px ;
@@ -241,7 +248,8 @@ header nav ul li a:active{
   align-content: flex-end;
   text-align: center;
   flex: 2 30%;
-  padding: 25px 50px 50px 50px; 
+  padding: 25px 50px 50px 50px;
+  border: 0.5px solid var(--color-two); 
 }
 
 .about-me article:hover {
@@ -259,6 +267,7 @@ header nav ul li a:active{
 .about-me h3{
   margin: 15px;
   padding: auto;
+  border-bottom: 0.5px solid black;
 }
 
 .about-me p{
@@ -321,13 +330,14 @@ header nav ul li a:active{
   width: 40%;
 }
 
-.select-work h3 {
+.work-description h3 {
   border-bottom: 0.5px solid black;
   margin: 20px 20px 0;
   padding: 5px;
+  text-align: center;
 }
 
-.select-work p{
+.work-description p{
   text-align: center;
   margin: 5px 20px 20px;
 }
@@ -360,6 +370,7 @@ header nav ul li a:active{
   margin: 50px;
   padding: 0 75px 75px;
   width: 75%;
+  border: 0.5px solid var(--color-two);
 }
 .resume-paper:hover {
   background-color: rgba(131,164,207,1.0);
@@ -471,6 +482,10 @@ padding: 5px;
 .contact-info input, .contact-info textarea{
   padding: 5px;
   margin: 5px;
+  width: 100%;
+}
+
+.contact-info textarea{
   width: 200%;
 }
 
@@ -492,5 +507,66 @@ footer {
 }
 
 footer p {
-  margin: 10px;
+  margin: 50px;
+}
+
+/* Media Query for smaller desktop screens and smaller */
+@media screen and (max-width: 980px) {
+  /*Fix About Me Order*/
+  .about-me article {
+    order: -1;
+    width: 100%;
+    align-self: flex-start;
+    flex: 2 100%;
+  }
+  .about-me img {
+    order: 1;
+    width: 40%;
+    flex: 1 35%;
+  }
+ 
+  /*Fix My Works Order*/
+  .select-work {
+    margin-top: 0;
+  }
+  .select-work img{
+    order:1;
+  }
+
+  .work-description{
+    margin-bottom: 0;
+  }
+}
+/* Media Query for tablets and smaller */
+@media screen and (max-width: 768px) {
+  header nav ul li a {
+    margin-left: auto;
+  }
+}
+
+/* Media Query for mobile phones and smaller */
+@media screen and (max-width: 575px) {
+  header {
+    position: relative;
+    width: 200%;
+  }
+
+  header h1 a{
+    font-size: 30px;
+  }
+
+  header nav ul li a{
+    font-size: 15px;
+  }
+
+  section, footer{
+    width: 200%;
+  }
+
+  .hero{
+    background-repeat: no-repeat;
+    position: relative;
+    background-clip: border-box;
+    background-position: center;
+  }
 }
