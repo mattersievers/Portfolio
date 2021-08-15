@@ -312,7 +312,7 @@ header nav ul li a:active{
 #r-b-pic {
   box-shadow: 4px 4px var(--color-five);
 }
-#p-g-pic{
+#p-g-pic, #st-pic{
   box-shadow: -4px 4px var(--color-five);
 }
 #r-b-pic:hover{
@@ -324,7 +324,7 @@ header nav ul li a:active{
   -webkit-animation-duration: 4s;
   -webkit-animation-timing-function: linear;
 }
-#p-g-pic:hover{
+#p-g-pic:hover, #st-pic:hover{
   animation-fill-mode: forwards;
   animation-name: picAnimateRight;
   animation-duration: 4s;
