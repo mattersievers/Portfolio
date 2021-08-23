@@ -405,8 +405,18 @@ header nav ul li a:active{
   flex-wrap: wrap;
   width: 100%;
 }
+
+.resume-paper form{
+  text-align: center;
+}
+
+.resume-paper button{
+  background-color: #83A4CF;
+  border: none;
+}
+
 .resume-paper h2{
-  margin: 25px auto 50px auto;
+  margin: 25px auto 10px auto;
   padding: auto 25px auto 25px;
   border-bottom: 1px solid black;
 }
